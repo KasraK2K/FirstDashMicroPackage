@@ -1,6 +1,6 @@
 {
   "name": "microservice.package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Needed Codes, Enums, Protobuf, interfaces for all services",
   "main": "build/index.js",
   "scripts": {
