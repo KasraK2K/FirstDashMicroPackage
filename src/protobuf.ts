@@ -12,6 +12,6 @@ export const loaderOptions = {
 	oneofs: true, // sets virtual oneof properties to field names
 }
 
-const AUTH_PROTO_PATH = resolve(process.cwd(), 'build/proto/auth.proto')
+const AUTH_PROTO_PATH = resolve(__dirname, 'proto/auth.proto')
 const authPackageDef = protoLoader.loadSync(AUTH_PROTO_PATH, loaderOptions)
 export const authGrpcObj = grpc.loadPackageDefinition(authPackageDef)
