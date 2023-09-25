@@ -1,12 +1,13 @@
 {
   "name": "microservice.package",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Needed Codes, Enums, Protobuf, interfaces for all services",
   "main": "build/index.js",
   "scripts": {
     "prebuild": "rimraf build",
     "copyproto": "cp -R ${PWD}/src/proto/ ${PWD}/build/proto",
-    "build": "npm run prebuild && tsc && npm run copyproto"
+    "build": "npm run prebuild && tsc && npm run copyproto",
+    "prepublish": "npm run build"
   },
   "author": "Kasra Karami <Kasra.Karami.KK@gmail.com>",
   "license": "ISC",
