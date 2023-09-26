@@ -1,3 +1,2 @@
 export * from './services'
-export * from './protobuf'
-export * from './interface'
+export * from './gRPC'

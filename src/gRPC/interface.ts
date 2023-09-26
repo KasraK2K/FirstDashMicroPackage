@@ -39,20 +39,3 @@ export interface IServiceType {
 	requestType: IType
 	responseType: IType
 }
-
-export interface IAuthService {
-	service: {
-		LoginPortalUser: IServiceType
-		RegisterPortalUser: IServiceType
-		serviceName: string
-	}
-	AuthRequest: IRequestType
-	AuthResponse: IType
-	PortalUser: IType
-}
-
-export interface IAuthGrpc {
-	authentication: {
-		Auth: ((...args: any[]) => IAuthService) & IAuthService
-	}
-}
