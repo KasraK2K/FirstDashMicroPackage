@@ -25,7 +25,7 @@ export const authGrpcObj: IAuthGrpc = grpc.loadPackageDefinition(packageDef)
 
 /* SECTION ------------------- Register Functions --------------------------- */
 export const loginPortalUser = (args: { email: string; password: string }): Record<string, any> => {
-	const client = new authGrpcObj.authentication.Auth(process.env.GRPC_ADDRESS, grpc.credentials.createInsecure())
+	const client = new authGrpcObj.authentication.Auth(process.env.MAIN_SERVER_GRPC_ADDRESS, grpc.credentials.createInsecure())
 
 	return new Promise((resolve, reject) => {
 		client.loginPortalUser(args, (error, result) => (error ? reject(error) : resolve(result)))
@@ -33,7 +33,7 @@ export const loginPortalUser = (args: { email: string; password: string }): Reco
 }
 
 export const registerPortalUser = (args: { email: string; password: string }): Record<string, any> => {
-	const client = new authGrpcObj.authentication.Auth(process.env.GRPC_ADDRESS, grpc.credentials.createInsecure())
+	const client = new authGrpcObj.authentication.Auth(process.env.MAIN_SERVER_GRPC_ADDRESS, grpc.credentials.createInsecure())
 
 	return new Promise((resolve, reject) => {
 		client.registerPortalUser(args, (error, result) => (error ? reject(error) : resolve(result)))
