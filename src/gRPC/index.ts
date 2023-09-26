@@ -10,3 +10,9 @@ export const loaderOptions = {
 	defaults: true, // when set to true, sets default values for output objects
 	oneofs: true, // sets virtual oneof properties to field names
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    Auth                                    */
+/* -------------------------------------------------------------------------- */
+export * from './auth'
+export * from './auth/interface'

@@ -18,7 +18,7 @@ import { IAuthGrpc } from './interface'
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------- Constants ------------------------------- */
-const PROTO_PATH = resolve(__dirname, 'proto/auth.proto')
+const PROTO_PATH = resolve(__dirname, '../proto/auth.proto')
 const packageDef = protoLoader.loadSync(PROTO_PATH, loaderOptions)
 export const authGrpcObj: IAuthGrpc = grpc.loadPackageDefinition(packageDef)
 /* -------------------------------------------------------------------------- */

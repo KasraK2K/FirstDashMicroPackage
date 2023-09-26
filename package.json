@@ -1,11 +1,11 @@
 {
   "name": "microservice.package",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Needed Codes, Enums, Protobuf, interfaces for all services",
   "main": "build/index.js",
   "scripts": {
     "prebuild": "rimraf build",
-    "copyproto": "cp -R ${PWD}/src/proto/ ${PWD}/build/proto",
+    "copyproto": "cp -R ${PWD}/src/gRPC/proto/ ${PWD}/build/gRPC/proto",
     "build": "npm run prebuild && tsc && npm run copyproto",
     "prepublish": "npm run build"
   },
