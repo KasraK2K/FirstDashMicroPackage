@@ -1,6 +1,6 @@
 {
   "name": "microservice.package",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Needed Codes, Enums, Protobuf, interfaces for all services",
   "main": "build/index.js",
   "scripts": {
@@ -12,12 +12,12 @@
   "author": "Kasra Karami <Kasra.Karami.KK@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^20.6.3",
     "dotenv": "^16.3.1",
     "dotenv-expand": "^10.0.0"
   },
   "devDependencies": {
     "rimraf": "^5.0.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "@types/node": "^20.6.3"
   }
 }
