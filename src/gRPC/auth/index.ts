@@ -8,11 +8,11 @@ import { IAuthGrpc } from './interface'
 /* -------------------------------------------------------------------------- */
 /*                                 How To Use                                 */
 /* -------------------------------------------------------------------------- */
-// login({ email: 'Kassra_K2K@yahoo.com', password: '12345678' })
+// loginPortalUser({ email: 'Kassra_K2K@yahoo.com', password: '12345678' })
 //   .then(console.log)
 //   .catch(console.log)
 
-// register({ email: 'Kadra_K2K@yahoo.com', password: '12345678' })
+// registerPortalUser({ email: 'Kadra_K2K@yahoo.com', password: '12345678' })
 //     .then(console.log)
 //     .catch(console.log)
 /* -------------------------------------------------------------------------- */
