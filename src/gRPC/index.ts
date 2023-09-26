@@ -11,6 +11,8 @@ export const loaderOptions = {
 	oneofs: true, // sets virtual oneof properties to field names
 }
 
+export const grpcServer = new grpc.Server()
+
 /* -------------------------------------------------------------------------- */
 /*                                    Auth                                    */
 /* -------------------------------------------------------------------------- */
