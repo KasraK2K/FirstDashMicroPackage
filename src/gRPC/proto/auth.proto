@@ -21,7 +21,7 @@ message PortalUser {
   int32 id = 1;
   string uid = 2;
   string email = 3;
-  int32 store_id = 4;
+  int32 store_ids = 4;
   string first_name = 5;
   string surname = 6;
 
