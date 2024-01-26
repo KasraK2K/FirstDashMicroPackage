@@ -1,23 +1,25 @@
 {
-  "name": "microservice.package",
-  "version": "0.0.15",
-  "description": "Needed Codes, Enums, Protobuf, interfaces for all services",
-  "main": "build/index.js",
-  "scripts": {
-    "prebuild": "rimraf build",
-    "copyproto": "cp -R ${PWD}/src/gRPC/proto/ ${PWD}/build/gRPC/proto",
-    "build": "npm run prebuild && tsc && npm run copyproto",
-    "prepublish": "npm run build"
-  },
-  "author": "Kasra Karami <Kasra.Karami.KK@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.3.1",
-    "dotenv-expand": "^10.0.0"
-  },
-  "devDependencies": {
-    "rimraf": "^5.0.1",
-    "typescript": "^5.2.2",
-    "@types/node": "^20.6.3"
-  }
+	"name": "microservice.package",
+	"version": "0.0.15",
+	"description": "Needed Codes, Enums, Protobuf, interfaces for all services",
+	"main": "build/index.js",
+	"scripts": {
+		"prebuild": "rimraf build",
+		"copyproto": "cp -R ${PWD}/src/gRPC/proto/ ${PWD}/build/gRPC/proto",
+		"build": "npm run prebuild && tsc && npm run copyproto",
+		"prepublish": "npm run build",
+		"lint": "eslint . --ext .ts",
+		"format": "prettier --write ."
+	},
+	"author": "Kasra Karami <Kasra.Karami.KK@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^16.3.1",
+		"dotenv-expand": "^10.0.0"
+	},
+	"devDependencies": {
+		"rimraf": "^5.0.1",
+		"typescript": "^5.2.2",
+		"@types/node": "^20.6.3"
+	}
 }

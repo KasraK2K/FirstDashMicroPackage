@@ -15,7 +15,7 @@ export enum ServiceName {
 	BUSINESS,
 	ASSET,
 	GATEWAY,
-	STAGING_BUSINESS,
+	STAGING_BUSINESS
 }
 
 /* -------------------------------------------------------------------------- */
